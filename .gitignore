@@ -1,0 +1,31 @@
+# Secrets — IB Flex Web Service token + query IDs
+.env
+.env.local
+*.env
+
+# IB Client Portal Gateway — downloaded fresh by `/ib-gateway setup`, ~23M of
+# proprietary jars/keystores/configs. We never check this in.
+gateway/
+
+# Runtime state
+*.pid
+.timeout_pid
+.version_checksum
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# OS / misc
+Thumbs.db

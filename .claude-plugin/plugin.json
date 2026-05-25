@@ -1,0 +1,12 @@
+{
+  "name": "ib-portfolio-management",
+  "description": "Interactive Brokers portfolio management for Claude Code — Client Portal Gateway lifecycle, IB REST + Flex Web Service skills, options framework, tax-loss-harvest, portfolio rebalance, and order-safety hooks.",
+  "version": "1.0.0",
+  "author": {
+    "name": "oh-rid",
+    "url": "https://github.com/oh-rid"
+  },
+  "homepage": "https://github.com/oh-rid/ib-portfolio-management",
+  "license": "MIT",
+  "keywords": ["claude-code", "interactive-brokers", "ibkr", "trading", "portfolio", "options"]
+}
