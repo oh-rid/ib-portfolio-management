@@ -258,12 +258,19 @@ Open a fresh terminal so `claude` is on your PATH.
 
 ### Step 3 — Clone the plugin
 
+Note: the GitHub repository is `claude-code-plugin-ib` (distribution name).
+Inside Claude Code the plugin's logical name is `ib-portfolio-management` —
+that's what shows up in `enabledPlugins`, in skill paths
+(`ib-portfolio-management:options`), and in the install directory name.
+You need to clone the repo **into a directory named after the plugin**, not
+after the repo:
+
 ```bash
-git clone https://github.com/oh-rid/ib-portfolio-management \
+git clone https://github.com/oh-rid/claude-code-plugin-ib \
   ~/.claude/plugins/local/plugins/ib-portfolio-management
 ```
 
-The directory name (`ib-portfolio-management`) matters — the plugin's
+The target directory name (`ib-portfolio-management`) matters — the plugin's
 manifest expects that exact name and the gateway-fallback path in
 `scripts/gateway.sh` looks here too.
 
@@ -441,7 +448,9 @@ if [ -e "$PLUGIN_DIR" ]; then
   echo "ALREADY INSTALLED at $PLUGIN_DIR — ask user before touching"
 else
   mkdir -p "$(dirname "$PLUGIN_DIR")"
-  git clone https://github.com/oh-rid/ib-portfolio-management "$PLUGIN_DIR"
+  # GitHub repo = claude-code-plugin-ib (distribution name)
+  # local dir = ib-portfolio-management (plugin's logical name — must match plugin.json `name`)
+  git clone https://github.com/oh-rid/claude-code-plugin-ib "$PLUGIN_DIR"
 fi
 
 # Verify

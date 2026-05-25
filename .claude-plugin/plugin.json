@@ -6,7 +6,7 @@
     "name": "oh-rid",
     "url": "https://github.com/oh-rid"
   },
-  "homepage": "https://github.com/oh-rid/ib-portfolio-management",
+  "homepage": "https://github.com/oh-rid/claude-code-plugin-ib",
   "license": "MIT",
   "keywords": ["claude-code", "interactive-brokers", "ibkr", "trading", "portfolio", "options"]
 }
